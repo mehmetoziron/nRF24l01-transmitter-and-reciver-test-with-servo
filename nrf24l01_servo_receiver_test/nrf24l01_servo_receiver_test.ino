@@ -22,7 +22,7 @@ void loop() {
     radio.read(&text, sizeof(text));
     sscanf(text, "L-X:%d Y:%d R-X:%d Y:%d", &xL, &yL, &xR, &yR);
 
-    // Artık değişkenlerde rakamlar var
+    //rakamlar aliniyor
     Serial.print("xL = "); Serial.print(xL);
     Serial.print(" yL = "); Serial.print(yL);
     Serial.print(" xR = "); Serial.print(xR);

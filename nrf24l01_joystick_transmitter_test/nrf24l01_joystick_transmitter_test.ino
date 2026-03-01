@@ -36,7 +36,7 @@ void setup() {
 }
 
 void loop() {
-  // yönleri senin test kodundaki gibi korudum
+  // ters olursa 1023 den cikartmak gerek.
   int xLVal = toStep(1023 -analogRead(xLPin));
   int yLVal = toStep( analogRead(yLPin));
   int xRVal = toStep(analogRead(xRPin));
